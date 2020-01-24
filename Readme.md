@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Валерия Зарембо](https://up.htmlacademy.ru/htmlcss/27/user/1281509).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин] (https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
