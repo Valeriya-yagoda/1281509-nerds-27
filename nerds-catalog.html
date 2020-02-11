@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <a href="ïndex.html">
+      <a href="index.html">
         <img src="img/index-logo.svg" alt="Логотип студии «Нердс»">
       </a>
       <ul>
@@ -19,99 +19,202 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul>
-        <li><button type="button">Корзина<button></li>
+        <li><a href="">Корзина</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <h2>Фильтр каталога</h2>
-      <!-- Здесь будет форма-->
-      <h2>Фильтр сетки и особенностей</h2>
-      <!-- Здесь будет форма-->
-    </section>
-
-    <section>
-      <!--Сортировка-->
-      <h2>Примеры сайтов</h2>
+      <h2 class="visually-hidden">Фильтр каталога</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+    <div class="price">
+      <label for="price">Стоимость</label>
+       <input type="range" id="price" name="price" min="1" max="15000" step="1">
+      <label for="from">от</label>
+      <output name="from" id="from"></output>
+      <label  for="to"> до</label>
+        <output name="to" id="to"></output>
+    </div>
+    <h2 class="visually-hidden">Фильтр сетки и особенностей</h2>
+    <fieldset>
+      <legend>Сетка:</legend>
       <ul>
         <li>
-          <img src="img/sedona.jpg" width="220" height="165" alt="Седона">
-          <div class="maket">
+          <input type="radio" name="mesh" value="adaptive" id="adaptive" checked>
+          <label for="adaptive">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="mesh" value="fixed" id="fixed">
+          <label for="fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="mesh" value="elastic" id="elastic">
+          <label for="elastic">Резиновая</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Особенности:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="slider" id="filter-slider" checked>
+          <label for="filter-slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="preference" id="filter-preference">
+          <label for="filter-preference">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="galery" id="filter-galery">
+          <label for="filter-galery">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="basket" id="filter-basket">
+          <label for="filter-basket">Корзина</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">
+      Показать
+    </button>
+      </form>
+    </section>
+    <section>
+      <!--Сортировка. Не понимаю как сверстать эту форму и форма ли это. Вместо ничего
+        сделала список с заголовком, но понимаю, что так точно не верно.
+      <h2>Сортировать</h2>
+      <ul>
+        <li><button>По цене</button></li>
+        <li><button>По типу</button></li>
+        <li><button>По названию</button></li>
+      </ul>
+      -->
+      <h2 class="visually-hidden">Примеры сайтов</h2>
+      <ul>
+        <li>
+          <img src="img/sedona.jpg" width="360" height="576" alt="сайт Седона">
+          <div class="info">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
         <li>
-          <img src="img/Pink.jpg" width="220" height="165" alt="Пинк">
-          <div class="maket">
+          <img src="img/pink.jpg" width="360" height="576" alt="Веб-сайты">
+          <div class="info">
             <h3>Pink APP</h3>
             <p>Продуктовый лендинг<br>
               приложения для iOS и Android</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
         <li>
-          <img src="img/barbershop.jpg" width="220" height="165" alt="Барбершоп Бородинский">
-          <div class="maket">
+          <img src="img/barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+          <div class="info">
             <h3>Barbershop</h3>
             <p>Сайт салона красоты.Для мужчин, да.</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
         <li>
-          <img src="img/mishka.jpg" width="220" height="165" alt="Предметы интерьера Мишка">
-          <div class="maket">
+          <img src="img/mishka.jpg" width="360" height="576" alt="Предметы интерьера Мишка">
+          <div class="info">
             <h3>Mishka</h3>
             <p>Интернет-магазин
               вязаных игрушек</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
         <li>
-          <img src="img/lending.jpg" width="220" height="165" alt="Школа">
-          <div class="maket">
+          <img src="img/lending.jpg" width="360" height="576" alt="Лендинг школы">
+          <div class="info">
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
         <li>
-          <img src="img/kvast.jpg" width="220" height="165" alt="Крафтовый квас " Кваст"">
-          <div class="maket">
+          <img src="img/kvast.jpg" width="360" height="576" alt="Крафтовый квас Кваст">
+          <div class="info">
             <h3>Кваст</h3>
             <p>Промо-сайт производителя
               крафтового кваса</p>
             <a href="#">9 900 руб.</a>
-            <img src="img/grey.png" width="220" alt="Серый">
           </div>
         </li>
       </ul>
     </section>
     <section>
-      <!--пагинация -->
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
     </section>
     <section>
-      <h2>Карта</h2>
-      <img src="img/map.png" alt="Карта">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/map.png" alt="Студия находится по адресу Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8">
+    </section>
+    <section>
+      <h2>Nerds Design Studio</h2>
+      <p>191186, Санкт-Петербург, <br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p>тел.+7(812)275-75-75</p>
+      <button type="button">Напишите нам</button>
+    </section>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Ваше имя">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма:</label>
+            <textarea type="text" name="letter-text" id="letter-text" rows="2">
+              В свободной форме
+            </textarea>
+        </p>
+        <button type="submit">
+          Отправить
+        </button>
+      </form>
+      <button type="button">
+        Закрыть
+      </button>
     </section>
 </body>
 <footer>
   <ul>
-    <li><a href="#">Вконтакте</a></li>
-    <li><a href="#">Фейсбук</a></li>
-    <li><a href="#">Инстаграм</a></li>
+    <li>
+      <a href="https://vk.com" alt="Вконтакте">
+      <img src="img/vk-icon.svg" alt="Вконтакте">
+    </a>
+  </li>
+    <li><a href="https://www.facebook.com" alt="Фейсбук">
+      <img src="img/fb-icon.svg" alt="Фейсбук">
+    </a>
+  </li>
+    <li>
+      <a href="https://www.instagram.com" alt="Инстаграм">
+        <img src="img/insta-icon.svg" alt="Инстаграм">
+      </a>
+    </li>
   </ul>
   <p>Давайте дружить, это выгодно!</p>
   <span>Скидка 10% для друзей из социальных сетей</span>
 </footer>
 </body>
-
 </html>

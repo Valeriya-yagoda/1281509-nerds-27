@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <a><img src="img/index-logo.svg" alt="Логотип студии «Нердс" »></a>
+      <a><img src="img/index-logo.svg" alt="Логотип студии Нердс"></a>
       <ul>
         <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
@@ -18,12 +18,12 @@
       </ul>
       <ul>
         <li>
-          <button type="button">Корзина</button></li>
+          <a href="">Корзина</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Студия Нердс</h1>
+    <h1 class="visually-hidden">Студия Нердс</h1>
     <section>
       <div class="slide">
         <h2>
@@ -33,7 +33,7 @@
         <p>Математически выверенный дизайн<br>
           для вашего сайта или мобильного приложения.</p>
         <a href="#">Узнать больше</a>
-        <img src="img/slide1.png" alt="Слайд1">
+        <img src="img/slide1.png" alt="Слайд с изображением смартфонов">
       </div>
       <div class="slide">
         <h2>
@@ -43,7 +43,7 @@
         <p>Никакого креатива, только математические формулы<br>
           для расчета идеальных пропорций.</p>
         <a href="#">Узнать больше</a>
-        <img src="img/slide2.png" alt="Слайд2">
+        <img src="img/slide2.png" alt="Слайд с изображением мониторов">
       </div>
       <div class="slide">
         <h2>
@@ -53,7 +53,7 @@
         <p>Работать днем как все? Мы портив этого.<br>
           ближе к полуночи работа только начинается</p>
         <a href="#">Узнать больше</a>
-        <img src="img/slide3.png" alt="Слайд3">
+        <img src="img/slide3.png" alt="Слайд с изображением планшетов">
       </div>
       <nav>
         <ul>
@@ -69,19 +69,19 @@
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a href="#">Заказать</a>
-          <img src="img/mini-fofo1.png" alt="минифото1">
+          <img src="img/mini-foto1.png" alt="ярлык презентаций">
         </li>
         <li>
           <h3>Приложения</h3>
-          <p>Покорите ТОП-10 приложений в AppStore и Google play </p>
+          <p>Покорите ТОП-10 приложений в AppStore и Google play</p>
           <a href="#">Заказать</a>
-          <img src="img/mini-fofo2.png" alt="минифото2">
+          <img src="img/mini-foto2.png" alt="ярлык приложений">
         </li>
         <li>
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-          <button type="button">Заказать<button>
-              <img src="img/mini-fofo3.png" alt="минифото3">
+          <a href="#">Заказать</a>
+              <img src="img/mini-foto3.png" alt="ярлык веб-сайтов">
         </li>
       </ul>
     </section>
@@ -97,8 +97,8 @@
       </ul>
     </section>
     <section>
-      <h2>Преимущества Нердс</h2>
-      <img src="colorlogonerds.png" alt="Цветной логотип Нердс">
+      <h2 class="visually-hidden">Преимущества Нердс</h2>
+      <img src="img/color-logo-nerds.png" alt="Логотип Нердс">
       <p>с 2004 года Любим точность во всем:</p>
       <ul>
         <li>
@@ -116,25 +116,76 @@
       </ul>
     </section>
     <section>
-      <h2>Партнеры</h2>
+      <h2 class="visually-hidden">Партнеры</h2>
       <ul>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHTML.png"
-              alt="Логотип Академии HTML"></a></li>
-        <li><img src="img/logoBarbershop.png" alt="Логотип Барбершопа"></li>
-        <li><img src="logoPink.png" alt="Логотип Пинк"></li>
-        <li><img src="logoMishka.png" alt="Логотип Мишка"></li>
+        <li>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.png" alt="Логотип Академии HTML">
+          </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/logo-barbershop.png" alt="Логотип Барбершопа">
+        </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/logo-pink.png" alt="Логотип Пинк">
+        </a>
+        </li>
+        <li>
+          <a href="">
+          <img src="img/logo-mishka.png" alt="Логотип Мишка">
+        </a>
+        </li>
       </ul>
     </section>
     <section>
-      <h2>Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
       <img src="img/map.png" alt="Карта">
+    </section>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя</label>
+          <input id="name" type="text" name="name" placeholder="Ваше имя">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter-text">Текст письма:</label>
+            <textarea type="text" name="letter-text" id="letter-text" rows="2">
+              В свободной форме
+            </textarea>
+        </p>
+        <button type="submit">
+          Отправить
+        </button>
+      </form>
+      <button type="button">
+        Закрыть
+      </button>
     </section>
   </main>
   <footer>
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li>
+        <a href="https://vk.com" alt="Вконтакте">
+        <img src="img/vk-icon.svg" alt="Вконтакте">
+      </a>
+    </li>
+      <li><a href="https://www.facebook.com" alt="Фейсбук">
+        <img src="img/fb-icon.svg" alt="Фейсбук">
+      </a>
+    </li>
+      <li>
+        <a href="https://www.instagram.com" alt="Инстаграм">
+          <img src="img/insta-icon.svg" alt="Инстаграм">
+        </a>
+      </li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <span>Скидка 10% для друзей из социальных сетей</span>
