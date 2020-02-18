@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  text-transform: none;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+.visually-hidden:
+Какие свойства и значения прописать, чтобы скрыть этот класс?*/
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+
+.button:active {
+  background-color: #d7373b;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  background-color: #a6a6a6;
+}
+
+.features {
+  background-color: #eeeeee;
+}
+
+.features  h2{
+  color: #283136;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-list {
+  list-style: none;
+}
+
+.slide a {
+  background-color: #fb565a;
+  text-transform: uppercase;
+  color: white;
+}
+
+.slide a:hover,
+.slide a:focus{
+  background-color: #e74246;
+}
+
+.slide a:active {
+  background-color: #d7373b;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item {
+  text-align: left;
+}
+
+.products h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.site a {
+  background-color: #fb565a;
+  text-transform: uppercase;
+  color: white;
+}
+
+.site a:hover,
+.site a:focus {
+  background-color: #e74246;
+}
+
+.site a:active {
+  background-color: #d7373b;
+}
+
+.applications a {
+  background-color: #00ca74;
+  text-transform: uppercase;
+  color: white;
+}
+
+.applications a:hover,
+.applications a:focus {
+  background-color: #00bc6c;
+}
+
+.applications a:active {
+  background-color: #00aa62;
+}
+
+
+.presentations a {
+  background-color: #efc84a;
+  text-transform: uppercase;
+  color: white;
+}
+.presentations a:hover,
+.presentations a:focus{
+  background-color: #eab534;
+}
+
+.presentations a:active {
+  background-color: #e5a722;
+}
+
+.descriptions-nerds {
+
+  text-align: left;
+}
+
+.descriptions-nerds h2 {
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: none;
+}
+
+.descriptions-nerds h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  text-align: left;
+}
+
+.advantages p:first-child {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* не срабатывает почему то свойство*/
+
+.advantages-list {
+  list-style: none;
+}
+
+.partners-list {
+  list-style: none;
+}
+/* Как написать свойство чтобы при наведении на партнеров,
+логотипы меняли цвет? Понимаю, что через Hover, но как именно не понимаю  */
+
+.adress-description div {
+  background-color: ffffff;
+  text-align: left;
+}
+/*Этот блок должен располагать на карте, максимум чтоя смогла придумать, это
+задать цвет фона. Это верно? А дальше с ним как быть?   */
+
+
+footer p {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+footer span {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+
+

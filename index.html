@@ -4,27 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,
+  700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a><img src="img/index-logo.svg" alt="Логотип студии Нердс"></a>
-      <ul>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип студии Нердс"></a>
+      <ul class="site-navigation">
         <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
         <li><a href="nerds-catalog.html">Магазин</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li>
           <a href="">Корзина</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Студия Нердс</h1>
-    <section>
+    <section class="features">
       <div class="slide">
         <h2>
           Долго,дорого<br>
@@ -55,134 +59,145 @@
         <a href="#">Узнать больше</a>
         <img src="img/slide3.png" alt="Слайд с изображением планшетов">
       </div>
-      <nav>
-        <ul>
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
+      <nav class="slide-navigation">
+        <ul class="slide-list">
+          <li class="slide-item"><button class="slide-button" type="button"></button></li>
+          <li class="slide-item"><button class="slide-button" type="button"></button></li>
+          <li class="slide-item"><button class="slide-button" type="button"></button></li>
         </ul>
       </nav>
     </section>
-    <section>
-      <ul>
-        <li>
+    <section class="products">
+      <ul class="products-list">
+        <li class="products-item site">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a href="#" class="site-button">Заказать</a>
           <img src="img/mini-foto1.png" alt="ярлык презентаций">
         </li>
-        <li>
+        <li class="products-item applications">
           <h3>Приложения</h3>
           <p>Покорите ТОП-10 приложений в AppStore и Google play</p>
-          <a href="#">Заказать</a>
+          <a href="#" class="applications-button">Заказать</a>
           <img src="img/mini-foto2.png" alt="ярлык приложений">
         </li>
-        <li>
+        <li class="products-item presentations">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
-          <a href="#">Заказать</a>
+          <a href="#" class="presentation-button">Заказать</a>
           <img src="img/mini-foto3.png" alt="ярлык веб-сайтов">
         </li>
       </ul>
     </section>
-    <section>
+    <section class="descriptions-nerds">
       <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h3>Выполняем заказы на разработку:</h3>
-      <ul>
+      <ul class="description-list">
         <li>Веб-сайтов любой сложности</li>
         <li> Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </section>
-    <section>
+    <section class="advantages">
       <h2 class="visually-hidden">Преимущества Нердс</h2>
       <img src="img/color-logo-nerds.png" alt="Логотип Нердс">
       <p>с 2004 года Любим точность во всем:</p>
-      <ul>
-        <li>
+      <ul class="advantages-list">
+        <li class="advantages-item">
           <h3>146%</h3>
           <p>Уровень самоодачи</p>
         </li>
-        <li>
+        <li class="advantages-item">
           <h3>100%</h3>
           <p>Соблюдение сроков</p>
         </li>
-        <li>
+        <li class="advantages-item">
           <h3>50%</h3>
           <p>Минимальная предоплата</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="partners">
       <h2 class="visually-hidden">Партнеры</h2>
-      <ul>
-        <li>
+      <ul class="partners-list">
+        <li class="partners-item">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-html.png" alt="Логотип Академии HTML">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="">
             <img src="img/logo-barbershop.png" alt="Логотип Барбершопа">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="">
             <img src="img/logo-pink.png" alt="Логотип Пинк">
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="">
             <img src="img/logo-mishka.png" alt="Логотип Мишка">
           </a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map.png" alt="Карта">
+      <img src="img/map.png" alt="Студия находится по адресу Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8">
     </section>
-    <section>
+    <section class="adress-description">
+      <div>
+        <h2>Nerds Design Studio</h2>
+        <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел.+7(812)275-75-75</p>
+        <button type="button" class="button">Напишите нам</button>
+      </div>
+    </section>
+    <section class="modal">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name">Ваше имя</label>
-          <input id="name" type="text" name="name" placeholder="Ваше имя">
+          <input id="name" type="text" name="name" placeholder="Ваше имя" class="user-name">
         </p>
         <p>
           <label for="user-email">Ваш e-mail</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+          <input id="user-email" type="email" name="email" placeholder="email@example.com" class="user-email">
         </p>
         <p>
           <label for="letter-text">Текст письма:</label>
-          <textarea type="text" name="letter-text" id="letter-text" rows="2">
+          <textarea type="text" name="letter-text" id="letter-text" rows="2" class="user-letter">
               В свободной форме
             </textarea>
         </p>
-        <button type="submit">
+        <button type="submit" class="button">
           Отправить
         </button>
       </form>
-      <button type="button">
+      <button type="button" class="button">
         Закрыть
       </button>
     </section>
   </main>
   <footer>
-    <ul>
+    <ul class="social-list">
       <li>
-        <a href="https://vk.com" alt="Вконтакте">
+        <a class="social-button" href="https://vk.com" alt="Вконтакте">
           <img src="img/vk-icon.svg" alt="Вконтакте">
         </a>
       </li>
-      <li><a href="https://www.facebook.com" alt="Фейсбук">
+      <li><a class="social-button" href="https://www.facebook.com" alt="Фейсбук">
           <img src="img/fb-icon.svg" alt="Фейсбук">
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com" alt="Инстаграм">
+        <a class="social-button" href="https://www.instagram.com" alt="Инстаграм">
           <img src="img/insta-icon.svg" alt="Инстаграм">
         </a>
       </li>
